@@ -1,0 +1,17 @@
+{
+  "buildCommand": "pip3 install -r requirements.txt && python3 build.py",
+  "outputDirectory": "dist",
+  "installCommand": "",
+  "framework": null,
+  "trailingSlash": true,
+  "headers": [
+    {
+      "source": "/assets/fonts/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }]
+    }
+  ]
+}

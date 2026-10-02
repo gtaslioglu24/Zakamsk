@@ -1,0 +1,42 @@
+{{> head}}{{> header}}<main id="main" class="legal">
+  <div class="wrap narrow">
+    <p class="legal__back"><a href="../"><i class="ph ph-arrow-left" aria-hidden="true"></i> {{legal_back}}</a></p>
+    <h1>{{legal_title}}</h1>
+    <p class="caption">{{legal_updated}}</p>
+
+    <section>
+      <h2>{{legal_op_h}}</h2>
+      <p>{{legal_op_body}}</p>
+      <dl class="legal__kv">
+        <div><dt>{{legal_label_name}}</dt><dd>{{legal_name}}</dd></div>
+        <div><dt>{{legal_label_code}}</dt><dd><span class="tbc">{{tbc}}</span></dd></div>
+        <div><dt>{{legal_label_rep}}</dt><dd>Marian Pasternak</dd></div>
+        <div><dt>{{legal_label_address}}</dt><dd>{{address}}</dd></div>
+        <div><dt>{{legal_label_contact}}</dt><dd><a href="mailto:{{contact_email}}">{{contact_email}}</a><br><a href="tel:{{phone_primary_raw}}">{{phone_primary}}</a></dd></div>
+      </dl>
+    </section>
+
+    <section>
+      <h2>{{legal_priv_h}}</h2>
+      <h3>{{legal_data_h}}</h3>
+      <p>{{legal_data_body}}</p>
+      <h3>{{legal_purpose_h}}</h3>
+      <p>{{legal_purpose_body}}</p>
+      <h3>{{legal_recip_h}}</h3>
+      <p>{{legal_recip_body}}</p>
+      <h3>{{legal_map_h}}</h3>
+      <p>{{legal_map_body}}</p>
+      <h3>{{legal_keep_h}}</h3>
+      <p>{{legal_keep_body}}</p>
+      <h3>{{legal_rights_h}}</h3>
+      <p>{{legal_rights_body}}</p>
+    </section>
+
+    <section>
+      <h2>{{legal_disc_h}}</h2>
+      <p>{{disclaimer}}</p>
+    </section>
+  </div>
+</main>
+
+{{> footer}}

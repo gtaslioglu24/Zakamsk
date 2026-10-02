@@ -1,0 +1,52 @@
+{
+  "site_url": "https://example.com",
+  "contact_email": "u2711797761@gmail.com",
+  "phone_primary": "+48 735 388 909",
+  "default_lang": "en",
+  "languages": [
+    {
+      "code": "en",
+      "name": "English"
+    },
+    {
+      "code": "uk",
+      "name": "Українська"
+    },
+    {
+      "code": "ru",
+      "name": "Русский"
+    },
+    {
+      "code": "pl",
+      "name": "Polski"
+    },
+    {
+      "code": "de",
+      "name": "Deutsch"
+    },
+    {
+      "code": "fr",
+      "name": "Français"
+    },
+    {
+      "code": "tr",
+      "name": "Türkçe"
+    }
+  ],
+  "images": {
+    "hero.jpg": "src/img/hero.jpg",
+    "pond-summer.jpg": "src/img/pond-summer.jpg",
+    "water-inlet.jpg": "src/img/water-inlet.jpg",
+    "spring.jpg": "src/img/spring.jpg",
+    "dam-works.jpg": "src/img/dam-works.jpg",
+    "sturgeon.jpg": "src/img/sturgeon.jpg",
+    "river.jpg": "src/img/river.jpg",
+    "masterplan.jpg": "src/img/masterplan.jpg",
+    "resort.jpg": "src/img/resort.jpg",
+    "kolyba.jpg": "src/img/kolyba.jpg",
+    "logo.jpg": "src/img/logo.jpg"
+  },
+  "form_endpoint": "",
+  "plausible_domain": "",
+  "noindex": true
+}

@@ -1,0 +1,273 @@
+{{> head}}{{> header}}<main id="main">
+
+  <!-- HERO: split, text left / real site photo right -->
+  <section class="hero">
+    <div class="wrap hero__grid">
+      <div class="hero__copy reveal">
+        <p class="eyebrow">{{hero_eyebrow}}</p>
+        <h1>{{hero_title}}</h1>
+        <p class="hero__sub">{{hero_sub}}</p>
+        <div class="hero__ctas">
+          <a class="btn btn--primary" href="#contact">{{cta_pack}}</a>
+          <a class="btn btn--ghost" href="#plan">{{cta_plan}} <i class="ph ph-arrow-down" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <figure class="hero__media reveal">
+        <img src="{{root}}assets/img/hero.jpg" alt="{{hero_img_alt}}" width="780" height="1040" fetchpriority="high">
+      </figure>
+    </div>
+  </section>
+
+  <!-- FACTS: plain stat row, no cards -->
+  <section class="facts" aria-label="{{facts_aria}}">
+    <div class="wrap facts__row">
+      <div class="fact reveal"><strong>2014</strong><span>{{fact_founded}}</span></div>
+      <div class="fact reveal"><strong>2018</strong><span>{{fact_operating}}</span></div>
+      <div class="fact reveal"><strong>3 t</strong><span>{{fact_sales}}</span></div>
+      <div class="fact reveal"><strong>400 t</strong><span>{{fact_target}}</span></div>
+    </div>
+  </section>
+
+  <!-- OPPORTUNITY: statement left, reasons right -->
+  <section class="section" id="opportunity">
+    <div class="wrap opp">
+      <h2 class="opp__title reveal">{{opp_title}}</h2>
+      <div class="opp__list">
+        <div class="opp__item reveal">
+          <i class="ph ph-arrows-in-line-horizontal" aria-hidden="true"></i>
+          <div><h3>{{opp1_title}}</h3><p>{{opp1_body}}</p></div>
+        </div>
+        <div class="opp__item reveal">
+          <i class="ph ph-drop" aria-hidden="true"></i>
+          <div><h3>{{opp2_title}}</h3><p>{{opp2_body}}</p></div>
+        </div>
+        <div class="opp__item reveal">
+          <i class="ph ph-map-trifold" aria-hidden="true"></i>
+          <div><h3>{{opp3_title}}</h3><p>{{opp3_body}}</p></div>
+        </div>
+        <p class="footnote">{{opp_source}}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FARM TODAY: photo bento + proof list -->
+  <section class="section section--tint" id="farm">
+    <div class="wrap">
+      <h2 class="reveal">{{farm_title}}</h2>
+      <p class="lead reveal">{{farm_lead}}</p>
+      <div class="bento">
+        <figure class="bento__a reveal"><img src="{{root}}assets/img/pond-summer.jpg" alt="{{img_pond_alt}}" loading="lazy"></figure>
+        <figure class="bento__b reveal"><img src="{{root}}assets/img/water-inlet.jpg" alt="{{img_inlet_alt}}" loading="lazy"></figure>
+        <figure class="bento__c reveal"><img src="{{root}}assets/img/sturgeon.jpg" alt="{{img_sturgeon_alt}}" loading="lazy"></figure>
+        <div class="bento__d proof reveal">
+          <ul>
+            <li><i class="ph ph-check-circle" aria-hidden="true"></i>{{proof1}}</li>
+            <li><i class="ph ph-check-circle" aria-hidden="true"></i>{{proof2}}</li>
+            <li><i class="ph ph-check-circle" aria-hidden="true"></i>{{proof3}}</li>
+            <li><i class="ph ph-check-circle" aria-hidden="true"></i>{{proof4}}</li>
+          </ul>
+        </div>
+        <figure class="bento__e reveal"><img src="{{root}}assets/img/dam-works.jpg" alt="{{img_dam_alt}}" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOSED LOOP: process flow -->
+  <section class="section" id="model">
+    <div class="wrap">
+      <h2 class="reveal">{{loop_title}}</h2>
+      <p class="lead reveal">{{loop_lead}}</p>
+      <ol class="loop reveal" aria-label="{{loop_title}}">
+        <li class="loop__step"><i class="ph ph-egg" aria-hidden="true"></i><h3>{{loop1_title}}</h3><p>{{loop1_body}}</p></li>
+        <li class="loop__step"><i class="ph ph-fish-simple" aria-hidden="true"></i><h3>{{loop2_title}}</h3><p>{{loop2_body}}</p></li>
+        <li class="loop__step"><i class="ph ph-package" aria-hidden="true"></i><h3>{{loop3_title}}</h3><p>{{loop3_body}}</p></li>
+        <li class="loop__step"><i class="ph ph-storefront" aria-hidden="true"></i><h3>{{loop4_title}}</h3><p>{{loop4_body}}</p></li>
+      </ol>
+      <div class="loop__return reveal">
+        <i class="ph ph-arrow-u-down-left" aria-hidden="true"></i>
+        <div><h3>{{loop5_title}}</h3><p>{{loop5_body}}</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHASED PLAN: vertical timeline -->
+  <section class="section section--tint" id="plan">
+    <div class="wrap plan">
+      <div class="plan__intro">
+        <h2 class="reveal">{{plan_title}}</h2>
+        <p class="lead reveal">{{plan_lead}}</p>
+        <dl class="plan__money reveal">
+          <div><dt>{{label_min_start}}</dt><dd>$1.2M</dd></div>
+          <div><dt>{{label_full}}</dt><dd>≈ $4.5M</dd></div>
+        </dl>
+        <img class="plan__img reveal" src="{{root}}assets/img/masterplan.jpg" alt="{{img_masterplan_alt}}" loading="lazy">
+        <p class="caption">{{caption_visualisation}}</p>
+      </div>
+      <ol class="timeline">
+        <li class="phase reveal">
+          <span class="phase__n" aria-hidden="true">1</span>
+          <div>
+            <h3>{{p1_title}}</h3>
+            <p>{{p1_body}}</p>
+            <ul class="ticks"><li>{{p1_w1}}</li><li>{{p1_w2}}</li><li>{{p1_w3}}</li><li>{{p1_w4}}</li></ul>
+            <dl class="kv">
+              <div><dt>{{label_target}}</dt><dd>{{p1_target}}</dd></div>
+              <div><dt>{{label_capital}}</dt><dd>$1.2M</dd></div>
+            </dl>
+          </div>
+        </li>
+        <li class="phase reveal">
+          <span class="phase__n" aria-hidden="true">2</span>
+          <div>
+            <h3>{{p2_title}}</h3>
+            <p>{{p2_body}}</p>
+            <ul class="ticks"><li>{{p2_w1}}</li><li>{{p2_w2}}</li><li>{{p2_w3}}</li><li>{{p2_w4}}</li></ul>
+            <dl class="kv">
+              <div><dt>{{label_target}}</dt><dd>{{p2_target}}</dd></div>
+              <div><dt>{{label_capital}}</dt><dd>{{cap_in_total}}</dd></div>
+            </dl>
+          </div>
+        </li>
+        <li class="phase reveal">
+          <span class="phase__n" aria-hidden="true">3</span>
+          <div>
+            <h3>{{p3_title}}</h3>
+            <p>{{p3_body}}</p>
+            <ul class="ticks"><li>{{p3_w1}}</li><li>{{p3_w2}}</li><li>{{p3_w3}}</li></ul>
+            <dl class="kv">
+              <div><dt>{{label_target}}</dt><dd>{{p3_target}}</dd></div>
+              <div><dt>{{label_capital}}</dt><dd>{{cap_in_total}}</dd></div>
+            </dl>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ECO-RESORT: full-width visual + spec tiles -->
+  <section class="section" id="resort">
+    <div class="wrap">
+      <h2 class="reveal">{{resort_title}}</h2>
+      <p class="lead reveal">{{resort_lead}}</p>
+      <figure class="wide reveal">
+        <img src="{{root}}assets/img/resort.jpg" alt="{{img_resort_alt}}" loading="lazy">
+        <figcaption class="caption">{{caption_visualisation}}</figcaption>
+      </figure>
+      <div class="specs">
+        <div class="spec reveal"><strong>438 m²</strong><span>{{spec_restaurant}}</span></div>
+        <div class="spec reveal"><strong>240 m²</strong><span>{{spec_spa}}</span></div>
+        <div class="spec reveal"><strong>5 × 70 m²</strong><span>{{spec_cabins}}</span></div>
+        <div class="spec reveal"><strong>10</strong><span>{{spec_gazebos}}</span></div>
+        <div class="spec reveal"><strong>1</strong><span>{{spec_lake}}</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION: distances + map -->
+  <section class="section section--tint" id="location">
+    <div class="wrap loc">
+      <div>
+        <h2 class="reveal">{{loc_title}}</h2>
+        <p class="lead reveal">{{loc_lead}}</p>
+        <dl class="dist reveal">
+          <div><dt>{{loc_poland}}</dt><dd>150 km</dd></div>
+          <div><dt>{{loc_romania}}</dt><dd>240 km</dd></div>
+          <div><dt>{{loc_hungary}}</dt><dd>300 km</dd></div>
+          <div><dt>{{loc_slovakia}}</dt><dd>300 km</dd></div>
+          <div><dt>{{loc_kalush}}</dt><dd>4 km</dd></div>
+        </dl>
+        <div class="callout reveal">
+          <i class="ph ph-flag" aria-hidden="true"></i>
+          <div><h3>{{loc_eu_title}}</h3><p>{{loc_eu_body}}</p></div>
+        </div>
+      </div>
+      <figure class="map reveal">
+        <div class="map__frame" data-map-src="https://www.openstreetmap.org/export/embed.html?bbox=23.60%2C48.70%2C25.10%2C49.35&amp;layer=mapnik&amp;marker=49.02%2C24.37" data-map-title="{{map_title}}">
+          <img src="{{root}}assets/img/river.jpg" alt="" loading="lazy">
+          <div class="map__consent">
+            <button class="btn btn--primary btn--sm" type="button"><i class="ph ph-map-pin" aria-hidden="true"></i> {{map_load}}</button>
+            <p>{{map_notice}}</p>
+          </div>
+        </div>
+        <figcaption class="caption">{{map_caption}}</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- FOUNDER & PRESS -->
+  <section class="section" id="team">
+    <div class="wrap founder">
+      <img class="founder__img reveal" src="{{root}}assets/img/spring.jpg" alt="{{img_spring_alt}}" loading="lazy">
+      <div class="reveal">
+        <h2>{{team_title}}</h2>
+        <p>{{team_body}}</p>
+        <blockquote>
+          <p>“{{press_quote}}”</p>
+          <footer>Marian Pasternak, {{press_role}}. <a href="https://kurs.if.ua/news/fermersk_gospodarstvo_na_prykarpatti_vzyalosya_vyroshchuvaty_pstrugiv_47139.html/" target="_blank" rel="noopener">{{press_source}}</a></footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- RISKS: accordion -->
+  <section class="section section--tint" id="risks">
+    <div class="wrap narrow">
+      <h2 class="reveal">{{risk_title}}</h2>
+      <p class="lead reveal">{{risk_lead}}</p>
+      <div class="acc reveal">
+        <details><summary>{{r1_q}}<i class="ph ph-plus" aria-hidden="true"></i></summary><p>{{r1_a}}</p></details>
+        <details><summary>{{r2_q}}<i class="ph ph-plus" aria-hidden="true"></i></summary><p>{{r2_a}}</p></details>
+        <details><summary>{{r3_q}}<i class="ph ph-plus" aria-hidden="true"></i></summary><p>{{r3_a}}</p></details>
+        <details><summary>{{r4_q}}<i class="ph ph-plus" aria-hidden="true"></i></summary><p>{{r4_a}}</p></details>
+        <details><summary>{{r5_q}}<i class="ph ph-plus" aria-hidden="true"></i></summary><p>{{r5_a}}</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / INVESTOR PACK -->
+  <section class="section contact" id="contact">
+    <div class="wrap contact__grid">
+      <div class="reveal">
+        <h2>{{contact_title}}</h2>
+        <p class="lead">{{contact_lead}}</p>
+        <ul class="contact__list">
+          <li><i class="ph ph-envelope-simple" aria-hidden="true"></i><a href="mailto:{{contact_email}}">{{contact_email}}</a></li>
+          <li><i class="ph ph-phone" aria-hidden="true"></i><a href="tel:{{phone_primary_raw}}">{{phone_primary}}</a></li>
+          <li><i class="ph ph-map-pin" aria-hidden="true"></i><span>{{address}}</span></li>
+        </ul>
+      </div>
+      <form class="form reveal" id="pack-form" novalidate data-email="{{contact_email}}" data-subject="{{form_subject}}" data-err-required="{{err_required}}" data-err-email="{{err_email}}" data-err-consent="{{err_consent}}" data-ok="{{form_ok}}" data-endpoint="{{form_endpoint}}" data-sending="{{form_sending}}" data-sent="{{form_sent}}" data-error="{{form_error}}">
+        <div class="hp" aria-hidden="true"><label for="f-website">Website</label><input id="f-website" name="website" tabindex="-1" autocomplete="off"></div>
+        <div class="field"><label for="f-name">{{f_name}}</label><input id="f-name" name="name" autocomplete="name" required><p class="err" aria-live="polite"></p></div>
+        <div class="field"><label for="f-company">{{f_company}}</label><input id="f-company" name="company" autocomplete="organization"><p class="err"></p></div>
+        <div class="field"><label for="f-email">{{f_email}}</label><input id="f-email" name="email" type="email" autocomplete="email" required><p class="err" aria-live="polite"></p></div>
+        <div class="field"><label for="f-country">{{f_country}}</label><input id="f-country" name="country" autocomplete="country-name"><p class="err"></p></div>
+        <div class="field field--full">
+          <label for="f-range">{{f_range}}</label>
+          <select id="f-range" name="range">
+            <option value="">{{f_range_none}}</option>
+            <option>&lt; $500k</option>
+            <option>$500k - $1.2M</option>
+            <option>$1.2M - $4.5M</option>
+            <option>&gt; $4.5M</option>
+          </select>
+          <p class="err"></p>
+        </div>
+        <div class="field field--full"><label for="f-msg">{{f_message}}</label><textarea id="f-msg" name="message" rows="4"></textarea><p class="err"></p></div>
+        <div class="field field--full check">
+          <input id="f-consent" name="consent" type="checkbox" required>
+          <label for="f-consent">{{f_consent}}</label>
+          <p class="err" aria-live="polite"></p>
+        </div>
+        <div class="field--full form__foot">
+          <button class="btn btn--primary" type="submit">{{cta_pack}}</button>
+          <p class="form__status" role="status"></p>
+        </div>
+        <p class="field--full form__privacy"><a href="legal/">{{form_privacy}}</a></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+{{> footer}}
