@@ -1,5 +1,5 @@
 {
-  "buildCommand": "pip3 install -r requirements.txt && python3 build.py",
+  "buildCommand": "python3 -m venv .venv && .venv/bin/pip install -q -r requirements.txt && .venv/bin/python build.py",
   "outputDirectory": "dist",
   "installCommand": "",
   "framework": null,
@@ -7,11 +7,21 @@
   "headers": [
     {
       "source": "/assets/fonts/(.*)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
     },
     {
       "source": "/(.*)",
-      "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }]
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
     }
   ]
 }
